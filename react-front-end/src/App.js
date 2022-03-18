@@ -5,10 +5,10 @@ import ExerciseList from "./components/ExerciseList";
 import Navbar from "./components/Navbar";
 import WorkoutList from "./components/WorkoutList";
 import About from "./components/About";
-// import Profile from "./components/Profile";
-// import WorkoutsListsItems from "./components/WorkoutsListsItems";
 import EditWorkout from "./components/EditWorkout";
-import SignUp from "./components/SignUp";
+// import Profile from "./components/Profile";
+// import SignUp from "./components/SignUp";
+// import WorkoutsListsItems from "./components/WorkoutsListsItems";
 
 function App() {
 
@@ -22,10 +22,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/exercises/:category" element={<ExerciseList />} />
           <Route path="/editworkout" element={<EditWorkout />} />
-          {/* <Route path="/workoutListsItems" element={<WorkoutsListsItems/>}/> */}
           <Route path="/workouts" element={<WorkoutList />} />
+          {/* <Route path="/workoutListsItems" element={<WorkoutsListsItems/>}/> */}
           {/* <Route path="/profile" element={<Profile />} /> */}
-          <Route path="/Signup" element={<SignUp/>} />
+          {/* <Route path="/Signup" element={<SignUp/>} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
