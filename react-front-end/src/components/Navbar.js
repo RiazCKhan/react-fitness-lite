@@ -16,7 +16,7 @@ export default function Navbar(children) {
             <Link to="/">
               <img src="./logo192.png" className="logo"></img>
               {/* <h1 className="logo">REACT</h1> */}
-              <span className="logo2">Fitness</span>
+              <span className="logo2">FitnessLite</span>
             </Link>
           </div>
           <ul>
