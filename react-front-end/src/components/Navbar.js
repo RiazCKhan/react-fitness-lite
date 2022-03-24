@@ -26,13 +26,13 @@ export default function Navbar(children) {
                 <span className="ml-1 purple">Home</span>
               </Link>
             </li>
-            <li className="m-3">
+            {/* <li className="m-3">
               <Link to="/about">
                 <FontAwesomeIcon icon={faUserFriends} className="purple" /><span className="ml-1 purple">
                   About
                 </span>
               </Link>
-            </li>
+            </li> */}
 
             <li className="m-3">
               <Link to="/workouts">
