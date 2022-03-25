@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import "./Home.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUser, faDumbbell, faUserFriends, faDoorOpen, faSignIn, faSignOut } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faDumbbell } from "@fortawesome/free-solid-svg-icons";
+// import { faUser, faUserFriends, faDoorOpen, faSignIn, faSignOut } from "@fortawesome/free-solid-svg-icons";
 import Footer from "./Footer";
-import { useState } from "react";
+// import { useState } from "react";
 
 
 export default function Navbar(children) {
