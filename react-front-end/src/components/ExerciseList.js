@@ -212,27 +212,26 @@ export default function ExerciseList() {
   const [showDeleteDialogue, setShowDeleteDialogue] = useState(false);
 
   // ----- API REQUEST SETTINGS -----
-  let apiExerciseByBodyPart = {
-    method: 'GET',
-    url: `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${category}`,
-    headers: {
-      'x-rapidapi-host': 'exercisedb.p.rapidapi.com',
-      'x-rapidapi-key': '9555d07c58msh23cc2d21a1fd290p1a3f88jsn6e3ffdf744a3'
-    }
-  };
+  // let apiExerciseByBodyPart = {
+  //   method: 'GET',
+  //   url: `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${category}`,
+  //   headers: {
+  //     'x-rapidapi-host': 'exercisedb.p.rapidapi.com',
+  //     'x-rapidapi-key': '9555d07c58msh23cc2d21a1fd290p1a3f88jsn6e3ffdf744a3'
+  //   }
+  // };
 
   // ----- CALL API, DEPENDENT ON CATEGORY (URL) CHANGE -----
-  useEffect(() => {
-
-    axios.request(apiExerciseByBodyPart)
-      .then((res) => {
-        // console.log("RESPONSE", res.data);
-        setExerciseData(res.data);
-      })
-      .catch((err) => {
-        console.log("Error: ", err)
-      });
-  }, [category]);
+  // useEffect(() => {
+  //   axios.request(apiExerciseByBodyPart)
+  //     .then((res) => {
+  //       // console.log("RESPONSE", res.data);
+  //       setExerciseData(res.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log("Error: ", err)
+  //     });
+  // }, [category]);
 
   // ----- PERSISTENT STATE pt2 ----- Loads previous state from Local Storage (from broswer)
   // Note: pt2 must stay above pt1 or State will be overwritten.
