@@ -282,7 +282,6 @@ export default function ExerciseList() {
       date,
       exercises: exerciseCart
     }
-    // console.log(workoutData);
 
     axios.put('/api/createWorkout', { workoutData })
       .then((res) => {
