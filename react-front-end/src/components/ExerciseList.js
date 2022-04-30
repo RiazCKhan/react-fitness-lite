@@ -292,7 +292,6 @@ export default function ExerciseList() {
 
     reset();
   };
-  // console.log(onSubmit)
 
   const onDelete = (exercise) => {
     setExerciseCart(
