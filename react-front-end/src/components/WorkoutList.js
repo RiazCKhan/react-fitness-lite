@@ -64,6 +64,7 @@ export default function WorkoutList(props) {
     setShowDeleteWorkout(false);
   }
 
+  // Update Carousel Width based on Content Changes
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, [workoutData]);
