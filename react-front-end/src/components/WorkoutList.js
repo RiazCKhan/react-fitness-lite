@@ -70,7 +70,6 @@ export default function WorkoutList(props) {
   const workoutList = workoutData.map((workout, i) => {
 
     return (
-
       <WorkoutListItem
         key={i}
         id={workout.workout_id}
@@ -80,9 +79,7 @@ export default function WorkoutList(props) {
         setShowDeleteWorkout={setShowDeleteWorkout}
         setWorkoutID={setWorkoutID}
         setWidth={setWidth}
-
       />
-
     );
   });
 
