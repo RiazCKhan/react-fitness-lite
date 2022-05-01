@@ -9,16 +9,17 @@ import "./Exercises.scss";
 import "./Workouts.scss";
 
 export default function WorkoutList(props) {
+  // Carousel Variables & States
   const carousel = useRef();
   const idRef = useRef();
-
   const [width, setWidth] = useState(0);
 
+  // Workout Data Management States
   const [workoutData, setworkoutData] = useState([]);
   const [isUpdated, setisUpdated] = useState(null);
   const [showDeleteWorkout, setShowDeleteWorkout] = useState(false);
 
-  // Update workout state from child
+  // Update workoutData State from Child (WorkoutListItem.js)
   const [workoutID, setWorkoutID] = useState("");
 
   // ----- CALL API, DEPENDENT ON CATEGORY (URL) CHANGE -----
@@ -32,7 +33,7 @@ export default function WorkoutList(props) {
       .catch((err) => {
         console.log("ERROR: ", err);
       })
-
+      
   }, []);
 
   useEffect(() => {
