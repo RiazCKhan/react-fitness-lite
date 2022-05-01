@@ -35,6 +35,7 @@ export default function WorkoutList(props) {
       })
   }, []);
 
+  // Check IF workoutData Changes
   useEffect(() => {
     if (isUpdated === null) {
       return null
