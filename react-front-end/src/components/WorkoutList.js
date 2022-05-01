@@ -22,7 +22,7 @@ export default function WorkoutList(props) {
   // Update workoutData State from Child (WorkoutListItem.js)
   const [workoutID, setWorkoutID] = useState("");
 
-  // ----- CALL API, DEPENDENT ON CATEGORY (URL) CHANGE -----
+  // ----- API Management -----
   useEffect(() => {
     const workoutApi = '/api/workouts';
 
@@ -33,7 +33,6 @@ export default function WorkoutList(props) {
       .catch((err) => {
         console.log("ERROR: ", err);
       })
-      
   }, []);
 
   useEffect(() => {
