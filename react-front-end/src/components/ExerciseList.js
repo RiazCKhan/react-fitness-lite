@@ -253,7 +253,7 @@ export default function ExerciseList() {
 
   const onAdd = (exercise) => {
     // console.log('INPUT: exercise param', exercise)
-    const singleExercise = exerciseData.find(erex => erex.id === exercise);
+    const singleExercise = backExercises.find(erex => erex.id === exercise);
     // console.log('Match singleExercise', singleExercise)
     const exists = exerciseCart.find(erex => erex.id === exercise);
     if (exists) {
@@ -299,7 +299,7 @@ export default function ExerciseList() {
     )
   }
 
-  const exerciseItem = exerciseData.map((exercise) => {
+  const exerciseItem = backExercises.map((exercise) => {
 
     return (
       <ExerciseListItem
