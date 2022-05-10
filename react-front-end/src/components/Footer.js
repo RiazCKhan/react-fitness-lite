@@ -5,8 +5,6 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer(children) {
 
-
-
   return (
     <div>
       <div className="footer">
