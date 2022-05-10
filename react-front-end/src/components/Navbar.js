@@ -43,8 +43,6 @@ export default function Navbar(children) {
 
           </ul>
         </nav>
-
-        <Footer />
       </header>
     </>
   );
