@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import axios from "axios";
 
 import "./Exercises.scss";
-import "./Workouts.scss";
+import "./WorkoutList.scss";
 
 export default function WorkoutList(props) {
   // Carousel Variables & States
