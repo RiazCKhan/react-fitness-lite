@@ -3,8 +3,6 @@ import "./Home.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faDumbbell } from "@fortawesome/free-solid-svg-icons";
 // import { faUser, faUserFriends, faDoorOpen, faSignIn, faSignOut } from "@fortawesome/free-solid-svg-icons";
-import Footer from "./Footer";
-// import { useState } from "react";
 
 
 export default function Navbar(children) {
@@ -34,17 +32,13 @@ export default function Navbar(children) {
                 </span>
               </Link>
             </li> */}
-
             <li className="m-3">
               <Link to="/workouts">
                 <FontAwesomeIcon icon={faDumbbell} className="purple" />
                 <span className="ml-1 purple">Workouts</span></Link>
             </li>
-
           </ul>
         </nav>
-
-        <Footer />
       </header>
     </>
   );
