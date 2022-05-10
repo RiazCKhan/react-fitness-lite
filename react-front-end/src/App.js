@@ -21,7 +21,6 @@ function App() {
       <Navbar />
     </>
       <Routes>
-        {/* <Route path="/" element={<Navbar/>}> */}
           <Route path="/" element={<Categories />} />
           <Route path="/exercises/:category" element={<ExerciseList />} />
           <Route path="/editworkout" element={<EditWorkout />} />
