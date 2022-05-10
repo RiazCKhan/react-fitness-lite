@@ -13,26 +13,24 @@ import EditWorkout from "./components/EditWorkout";
 
 function App() {
 
-
   return (
-
     <BrowserRouter>
-    <>
-      <Navbar />
-    </>
+      <>
+        <Navbar />
+      </>
       <Routes>
-          <Route path="/" element={<Categories />} />
-          <Route path="/exercises/:category" element={<ExerciseList />} />
-          <Route path="/editworkout" element={<EditWorkout />} />
-          <Route path="/workouts" element={<WorkoutList />} />
-          {/* <Route path="/about" element={<About />} /> */}
-          {/* <Route path="/workoutListsItems" element={<WorkoutsListsItems/>}/> */}
-          {/* <Route path="/profile" element={<Profile />} /> */}
-          {/* <Route path="/Signup" element={<SignUp/>} /> */}
+        <Route path="/" element={<Categories />} />
+        <Route path="/exercises/:category" element={<ExerciseList />} />
+        <Route path="/editworkout" element={<EditWorkout />} />
+        <Route path="/workouts" element={<WorkoutList />} />
+        {/* <Route path="/about" element={<About />} /> */}
+        {/* <Route path="/workoutListsItems" element={<WorkoutsListsItems/>}/> */}
+        {/* <Route path="/profile" element={<Profile />} /> */}
+        {/* <Route path="/Signup" element={<SignUp/>} /> */}
         {/* </Route> */}
       </Routes>
       <>
-      <Footer />
+        <Footer />
       </>
     </BrowserRouter>
   );
