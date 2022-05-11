@@ -22,6 +22,11 @@ export default function Navbar(children) {
               </Link>
             </li>
             <li className="m-3">
+              <Link to="/exercises">
+                <FontAwesomeIcon icon={faDumbbell} className="purple" />
+                <span className="ml-1 purple">Build</span></Link>
+            </li>
+            <li className="m-3">
               <Link to="/workouts">
                 <FontAwesomeIcon icon={faDumbbell} className="purple" />
                 <span className="ml-1 purple">Workouts</span></Link>
