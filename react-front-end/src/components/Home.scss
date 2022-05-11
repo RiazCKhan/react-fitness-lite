@@ -17,15 +17,11 @@ nav {
   font-family: Poppins, sans-serif;
 }
 
-.logo2{
-  // margin-top:10px;
+.logo2 {
   font-size: 2rem;
   text-shadow: 2px 1px 8px rgba(244, 114, 83, 1);
   color:  rgba(224, 54, 148, 1);
   font-weight: bold;
-  animation-name: slidein;
-  animation-duration: 0.5s;
-  animation-iteration-count: 1;
 }
 @keyframes slidein {
   from {
