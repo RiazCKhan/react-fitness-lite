@@ -11,8 +11,7 @@ export default function Navbar(children) {
         <nav className="header">
           <div className="d-flex">
             <Link to="/">
-              <img src="./logo192.png" className="logo" alt=""></img>
-              <span className="logo2">FitnessLite</span>
+              <span className="logo2">ReactFitness Lite</span>
             </Link>
           </div>
           <ul>
