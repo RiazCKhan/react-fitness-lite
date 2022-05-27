@@ -21,7 +21,6 @@ function App() {
         <Route path="/editworkout" element={<EditWorkout />} />
         <Route path="/workouts" element={<WorkoutList />} />
         {/* <Route path="/workoutListsItems" element={<WorkoutsListsItems/>}/> */}
-        {/* <Route path="/Signup" element={<SignUp/>} /> */}
         {/* <Route path="/profile" element={<Profile />} /> */}
       </Routes>
       <>
