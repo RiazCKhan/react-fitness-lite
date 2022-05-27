@@ -20,7 +20,7 @@ export default function SignUp() {
           <img src="/cover2.jpeg" alt="" className="SignUpTopImg" />
         </div>
 
-        <div className="categoriesWrapper padding-50 purpleBckgnd">
+        {/* <div className="categoriesWrapper padding-50 purpleBckgnd">
           <div className="signCategories">
             <img src="/back.jpeg" alt="" />
             <div className="title topleftSM">Back</div>
@@ -65,7 +65,7 @@ export default function SignUp() {
             <img src="/core.jpeg" alt="" />
             <div className="title topleftSM">Core</div>
           </div>
-        </div>
+        </div> */}
 
 
       </section>
