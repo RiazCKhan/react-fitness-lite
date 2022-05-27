@@ -231,7 +231,8 @@ export default function ExerciseList() {
       .catch((err) => {
         console.log("Error: ", err)
       });
-  // eslint-disable-next-line react-hooks/exhaustive-deps 
+    // The line below removes the console warning for the dependency array
+    // eslint-disable-next-line react-hooks/exhaustive-deps 
   }, [category]);
 
   // ----- PERSISTENT STATE pt2 ----- Loads previous state from Local Storage (from broswer)
