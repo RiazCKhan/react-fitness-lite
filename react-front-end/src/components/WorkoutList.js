@@ -50,6 +50,8 @@ export default function WorkoutList(props) {
           console.log("Error: ", error)
         });
     }
+        // The line below removes the console warning for the dependency array
+    // eslint-disable-next-line react-hooks/exhaustive-deps 
   }, [isUpdated]);
 
   const onDelete = (id) => {
