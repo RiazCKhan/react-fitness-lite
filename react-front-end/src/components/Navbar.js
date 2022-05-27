@@ -3,15 +3,14 @@ import "./Home.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faDumbbell } from "@fortawesome/free-solid-svg-icons";
 
-export default function Navbar(children) {
-
+export default function Navbar() {
   return (
     <>
       <header>
         <nav className="header">
           <div className="d-flex">
             <Link to="/">
-              <span className="logo2">ReactFitness Lite</span>
+              <span className="logo">ReactFitness Lite</span>
             </Link>
           </div>
           <ul>
@@ -20,6 +19,11 @@ export default function Navbar(children) {
                 <FontAwesomeIcon icon={faHome} className="purple" />
                 <span className="ml-1 purple">Home</span>
               </Link>
+            </li>
+            <li className="m-3">
+              <Link to="/exercises">
+                <FontAwesomeIcon icon={faDumbbell} className="purple" />
+                <span className="ml-1 purple">Build</span></Link>
             </li>
             <li className="m-3">
               <Link to="/workouts">
