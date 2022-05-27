@@ -3,8 +3,7 @@ import "./Home.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faDumbbell } from "@fortawesome/free-solid-svg-icons";
 
-export default function Navbar(children) {
-
+export default function Navbar() {
   return (
     <>
       <header>
