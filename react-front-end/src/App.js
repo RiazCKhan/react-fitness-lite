@@ -1,6 +1,4 @@
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Categories from "./components/Categories";
 import ExerciseList from "./components/ExerciseList";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -19,12 +17,10 @@ function App() {
       </>
       <Routes>
         <Route path="/" element={<SignUp/>} />
-        {/* <Route path="/" element={<Categories />} /> */}
         <Route path="/exercises/:category" element={<ExerciseList />} />
         <Route path="/editworkout" element={<EditWorkout />} />
         <Route path="/workouts" element={<WorkoutList />} />
         {/* <Route path="/workoutListsItems" element={<WorkoutsListsItems/>}/> */}
-        {/* <Route path="/Signup" element={<SignUp/>} /> */}
         {/* <Route path="/profile" element={<Profile />} /> */}
       </Routes>
       <>

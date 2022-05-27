@@ -21,7 +21,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="m-3">
-              <Link to="/exercises">
+              <Link to="/exercises/back">
                 <FontAwesomeIcon icon={faDumbbell} className="purple" />
                 <span className="ml-1 purple">Build</span></Link>
             </li>
